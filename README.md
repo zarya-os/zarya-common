@@ -8,19 +8,21 @@
 - **backgrounds**: Fork of [`vanilla-backgrounds`](https://github.com/Vanilla-OS/vanilla-backgrounds) to act as placeholder-wallpapers until new ones are picked (_uses vanilla-backgrounds build structure_)
 - **sessions**: adds custom `GNOME` session with the above overrides (_uses yaru's build structure_).
 
-### dependencies
+#### dependencies:
 ```bash
 sudo apt install libgtk-3-dev git meson sassc
 ```
 
-#### clone and build
+#### clone and build:
 
 ```bash
 git clone https://github.com/zarya-os/zarya-common.git
-cd yaru
+
+cd zarya-common
+
 # Initialize build system (only required once per repo)
-meson build
-cd build
+meson build && cd build
+
 # Build and install
 sudo ninja install
 ```
