@@ -1,0 +1,13 @@
+option('gnome-shell', type: 'boolean', value: true, description:'build gnome-shell component')
+option('gnome-shell-gresource', type: 'boolean', value: true, description: 'build gnome-shell component in gresources')
+option('gtk', type: 'boolean', value: true, description:'build gtk component')
+option('icons', type: 'boolean', value: true, description:'build icon component')
+option('sessions', type: 'boolean', value: true, description:'build sessions component')
+option('backgrounds', type: 'boolean', value: true, description:'build background component')
+option('plymouth', type: 'boolean', value: true, description:'build plymouth component')
+
+option('default', type: 'boolean', value: true, description:'build gtk default flavour')
+option('dark', type: 'boolean', value: true, description:'build gtk dark flavour')
+
+option('zarya-bgrt', type: 'boolean', value: true, description:'build zarya-bgrt plymouth-theme')
+option('zarya-text', type: 'boolean', value: false, description:'build zarya-text plymouth-theme')

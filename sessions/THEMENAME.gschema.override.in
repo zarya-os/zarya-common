@@ -1,0 +1,8 @@
+##########################################
+# @SessionName@ specific session for testers #
+##########################################
+
+[org.gnome.desktop.interface:@SessionName@]
+cursor-theme = "adw-gtk3"
+icon-theme = "adw-gtk3"
+gtk-theme = "adw-gtk3"

@@ -1,0 +1,14 @@
+[Plymouth Theme]
+Name=zarya Text
+Description=Text mode theme based on zarya-bgrt theme
+ModuleName=zarya-text
+
+[zarya-text]
+title=zarya
+# Background
+black=0x000000
+# Title Text + Additional messages such as key interrupt
+white=0xffffff
+# Dot coloring
+white=0xffffff
+# Status message (fsck)

@@ -1,0 +1,11 @@
+[Desktop Entry]
+Name=@StyleThemeName@
+Type=X-GNOME-Metatheme
+Comment=@StyleThemeName@ theme
+Encoding=UTF-8
+
+[X-GNOME-Metatheme]
+GtkTheme=@StyleThemeName@
+IconTheme=@IconThemeName@
+CursorTheme=@ThemeName@
+CursorSize=24

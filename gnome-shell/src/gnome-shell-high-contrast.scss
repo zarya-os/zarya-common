@@ -1,0 +1,42 @@
+$variant: 'dark'; //we want high contrast with dark variant
+
+@import "gnome-shell-upstream-sass/_high-contrast-colors"; // make use of upstream's sass files
+@import "gnome-shell-upstream-sass/_drawing";
+@import "gnome-shell-upstream-sass/_common";
+@import "gnome-shell-upstream-sass/_widgets";
+
+//force symbolic icons
+stage {
+	-st-icon-style: symbolic;
+}
+
+.toggle-switch { width: 48px; }
+.toggle-switch {
+  background-image: url("resource:///org/gnome/shell/theme/toggle-off-hc.svg");
+  &:checked { background-image: url("resource:///org/gnome/shell/theme/toggle-on-hc.svg"); }
+}
+
+//force opaque panel
+#panel {
+  &.login-screen,
+  &.unlock-screen,
+  &:overview {
+    background-color: #000;
+
+    .panel-corner {
+      -panel-corner-opacity: 1;
+    }
+  }
+
+  .panel-button {
+    color: #fff !important;
+  }
+}
+
+//thumbnail app icons no dropshadow and forced color
+.window-picker .icon-dropshadow {
+  icon-shadow: none;
+  background-color: $osd_bg_color;
+  padding: $base_padding * 2;
+  border-radius: $modal_radius;
+}

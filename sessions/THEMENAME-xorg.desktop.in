@@ -1,0 +1,7 @@
+[Desktop Entry]
+Name=@SessionName@ on Xorg
+Comment=This session logs you with @SessionName@ on xorg
+Exec=env GNOME_SHELL_SESSION_MODE=@SessionName@ gnome-session
+TryExec=gnome-session
+Type=Application
+DesktopNames=@SessionName@:GNOME
