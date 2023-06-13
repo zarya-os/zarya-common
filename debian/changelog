@@ -1,0 +1,6 @@
+zarya-common (44-zarya1) lunar; urgency=medium
+
+  [ Paul Kepinski ]
+  * GS: fix light theme invisible text (LP: #2012991)
+
+ -- Muqtadir <muqtadir5555@gmail.com>  Tue, 13 Jun 2023 22:17:56 +0530

@@ -1,7 +1,7 @@
 backgrounddir = join_paths(get_option('prefix'), get_option('datadir'), 'backgrounds', 'zarya')
 metadatadir = join_paths(get_option('datadir'), 'gnome-background-properties')
 
-backgrounds = ['vanilla-default.webp',  'vanilla-default.webp']
+backgrounds = ['vanilla-default.webp',  'vanilla-dark.webp']
 
 conf_data = configuration_data()
   conf_data.set('BACKGROUNDDIR', backgrounddir)

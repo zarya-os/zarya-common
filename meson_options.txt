@@ -4,7 +4,7 @@ option('gtk', type: 'boolean', value: true, description:'build gtk component')
 option('icons', type: 'boolean', value: true, description:'build icon component')
 option('sessions', type: 'boolean', value: true, description:'build sessions component')
 option('backgrounds', type: 'boolean', value: true, description:'build background component')
-option('plymouth', type: 'boolean', value: true, description:'build plymouth component')
+option('plymouth', type: 'boolean', value: false, description:'build plymouth component')
 
 option('default', type: 'boolean', value: true, description:'build gtk default flavour')
 option('dark', type: 'boolean', value: true, description:'build gtk dark flavour')

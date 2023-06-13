@@ -1,0 +1,50 @@
+Source: zarya-common
+Section: misc
+Priority: optional
+Maintainer: Muqtadir <muqtadir5555@gmail.com>
+Build-Depends: debhelper-compat (= 13)
+Build-Depends-Indep: libglib2.0-dev,
+                     meson (>= 0.59),
+                     sassc,
+Standards-Version: 4.1.5
+Homepage: https://github.com/zarya-os/zarya-common
+Vcs-Browser: https://github.com/zarya-os/zarya-common
+Vcs-Git: https://github.com/zarya-os/zarya-common.git
+
+Package: zarya-common-gnome-shell
+Architecture: all
+Depends: ${shlibs:Depends},
+         ${misc:Depends},
+Breaks: gnome-shell (<< 43~)
+Description: zarya-common gnome-shell component.
+
+Package: zarya-common-gtk
+Architecture: all
+Depends: ${shlibs:Depends},
+         ${misc:Depends},
+         gnome-themes-extra,
+         gtk2-engines-pixbuf,
+         gtk2-engines-murrine,
+         libglib2.0-bin,
+Description: zarya-common gtk component.
+
+Package: zarya-common-icon
+Architecture: all
+Depends: ${shlibs:Depends},
+         ${misc:Depends},
+Description: zarya-common icon component.
+
+Package: zarya-common-backgrounds
+Architecture: all
+Depends: ${shlibs:Depends},
+         ${misc:Depends},
+Description: zarya-common backgrounds component.
+
+Package: zarya-common-plymouth
+Architecture: all
+Depends: plymouth,
+         plymouth-label,
+         ${misc:Depends},
+Provides: plymouth-theme,
+Breaks: plymouth (<< 0.9.2-3ubuntu1~),
+Description: zarya-common plymouth component.
