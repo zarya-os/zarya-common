@@ -40,6 +40,12 @@ Depends: ${shlibs:Depends},
          ${misc:Depends},
 Description: zarya-common backgrounds component.
 
+Package: zarya-common-defaults
+Architecture: all
+Depends: ${shlibs:Depends},
+         ${misc:Depends},
+Description: zarya-common defaults component.
+
 Package: zarya-common-plymouth
 Architecture: all
 Depends: plymouth,
