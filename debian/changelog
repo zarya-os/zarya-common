@@ -1,3 +1,15 @@
+zarya-common (44-zarya4) lunar; urgency=medium
+
+  * add file-path uri for background in session
+
+ -- Muqtadir <muqtadir5555@gmail.com>  Tue, 14 Jun 2023 17:06:23 +0530
+
+zarya-common (44-zarya3) lunar; urgency=medium
+
+  * fix zarya-common-gnome-shell
+
+ -- Muqtadir <muqtadir5555@gmail.com>  Tue, 14 Jun 2023 17:06:23 +0530
+
 zarya-common (44-zarya2) lunar; urgency=medium
 
   * Added zarya-common-defaults
