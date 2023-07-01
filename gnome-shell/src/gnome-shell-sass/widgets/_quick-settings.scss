@@ -63,22 +63,23 @@
     border-width: 0;
     // Yaru change: different toggle arrow bg
     $_bg: scale-color($color: $bg_color, $lightness: if($variant == 'light', -15%, 5%));
+    border-color: if($variant == 'light', $borders_color, $jet); //zarya change
     @include button(normal, $bg: $_bg);
     &:hover {@include button(hover, $bg: $_bg);}
     &:active {@include button(active, $bg: $_bg);}
 
     &:checked {
       @include button(default, $c:$selected_bg_color);
-      // border-color: $selected_borders_color; // Yaru change: drop border
+      border-color: $selected_borders_color;
     }
 
     &:ltr {
       border-radius: 0 99px 99px 0;
-      // border-left-width: 1px; // Yaru change: drop border
+      border-left-width: 1px;
     }
     &:rtl {
       border-radius: 99px 0 0 99px;
-      // border-right-width: 1px; // Yaru change: drop border
+      border-right-width: 1px;
     }
   }
 }
